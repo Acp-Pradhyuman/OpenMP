@@ -1,0 +1,45 @@
+gcc -fopenmp matrix_mul_serial.c
+./a.out
+Performing Serial Matrix Multiplication
+Time taken for Serial Matrix Multiplication: 5.033838 seconds
+Result at last element: -830335500.000000000000000
+
+
+gcc -fopenmp matrix_mul_parallel.c
+acp-pradhyuman@b3170:/mnt/d/Desktop/mtech/sem-2/HPC/openMP$ ./a.out
+Performing Matrix Multiplication
+
+Matrix Multiplication - Threads: 1
+Time: 5.412166 seconds
+Speedup: 1.000000
+Sum of result (last element): -830335500.000000000000000
+
+Matrix Multiplication - Threads: 2
+Time: 3.024110 seconds
+Speedup: 1.789672
+Sum of result (last element): -830335500.000000000000000
+
+Matrix Multiplication - Threads: 4
+Time: 1.728246 seconds
+Speedup: 3.131595
+Sum of result (last element): -830335500.000000000000000
+
+Matrix Multiplication - Threads: 8
+Time: 0.997674 seconds
+Speedup: 5.424784
+Sum of result (last element): -830335500.000000000000000
+
+Matrix Multiplication - Threads: 16
+Time: 0.928989 seconds
+Speedup: 5.825866
+Sum of result (last element): -830335500.000000000000000
+
+Matrix Multiplication - Threads: 32
+Time: 0.859381 seconds
+Speedup: 6.297751
+Sum of result (last element): -830335500.000000000000000
+
+Matrix Multiplication - Threads: 64
+Time: 0.883354 seconds
+Speedup: 6.126839
+Sum of result (last element): -830335500.000000000000000

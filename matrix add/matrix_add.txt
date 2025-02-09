@@ -1,0 +1,45 @@
+gcc -fopenmp matrix_add_serial.c
+./a.out
+Performing Serial Matrix Addition
+Time taken for Serial Matrix Addition: 0.568407 seconds
+Result at last element: 10000.000000000000000
+
+
+gcc -fopenmp matrix_add_parallel.c
+./a.out
+Performing Matrix Addition
+
+Matrix Addition - Threads: 1
+Time: 0.574580 seconds
+Speedup: 1.000000
+Sum of result (last element): 10000.000000000000000
+
+Matrix Addition - Threads: 2
+Time: 0.126784 seconds
+Speedup: 4.531950
+Sum of result (last element): 10000.000000000000000
+
+Matrix Addition - Threads: 4
+Time: 0.089373 seconds
+Speedup: 6.429024
+Sum of result (last element): 10000.000000000000000
+
+Matrix Addition - Threads: 8
+Time: 0.096871 seconds
+Speedup: 5.931406
+Sum of result (last element): 10000.000000000000000
+
+Matrix Addition - Threads: 16
+Time: 0.099305 seconds
+Speedup: 5.786029
+Sum of result (last element): 10000.000000000000000
+
+Matrix Addition - Threads: 32
+Time: 0.102164 seconds
+Speedup: 5.624106
+Sum of result (last element): 10000.000000000000000
+
+Matrix Addition - Threads: 64
+Time: 0.104069 seconds
+Speedup: 5.521125
+Sum of result (last element): 10000.000000000000000

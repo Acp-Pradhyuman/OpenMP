@@ -1,0 +1,73 @@
+gcc -fopenmp vector_dot_prod.c
+./a.out
+Performing Dot Product Calculation
+
+Dot Product (without critical section) - Threads: 1
+Time: 0.002336 seconds
+Speedup: 1.000000
+Dot product result: 166667166666999968.000000000000000
+
+Dot Product (with critical section) - Threads: 1
+Time: 0.013477 seconds
+Speedup: 1.000000
+Dot product result with critical section: 166667166666999968.000000000000000
+
+Dot Product (without critical section) - Threads: 2
+Time: 0.001324 seconds
+Speedup: 1.764039
+Dot product result: 166667166667000000.000000000000000
+
+Dot Product (with critical section) - Threads: 2
+Time: 0.037516 seconds
+Speedup: 0.359231
+Dot product result with critical section: 166667166667001856.000000000000000
+
+Dot Product (without critical section) - Threads: 4
+Time: 0.000931 seconds
+Speedup: 2.508500
+Dot product result: 166667166667000000.000000000000000
+
+Dot Product (with critical section) - Threads: 4
+Time: 0.072151 seconds
+Speedup: 0.186787
+Dot product result with critical section: 166667166667002688.000000000000000
+
+Dot Product (without critical section) - Threads: 8
+Time: 0.000755 seconds
+Speedup: 3.095322
+Dot product result: 166667166667000032.000000000000000
+
+Dot Product (with critical section) - Threads: 8
+Time: 0.092412 seconds
+Speedup: 0.145835
+Dot product result with critical section: 166667166667020352.000000000000000
+
+Dot Product (without critical section) - Threads: 16
+Time: 0.001222 seconds
+Speedup: 1.910780
+Dot product result: 166667166666999968.000000000000000
+
+Dot Product (with critical section) - Threads: 16
+Time: 0.216826 seconds
+Speedup: 0.062155
+Dot product result with critical section: 166667166666999584.000000000000000
+
+Dot Product (without critical section) - Threads: 32
+Time: 0.001585 seconds
+Speedup: 1.473736
+Dot product result: 166667166667000000.000000000000000
+
+Dot Product (with critical section) - Threads: 32
+Time: 0.191173 seconds
+Speedup: 0.070496
+Dot product result with critical section: 166667166667014560.000000000000000
+
+Dot Product (without critical section) - Threads: 64
+Time: 0.003836 seconds
+Speedup: 0.608858
+Dot product result: 166667166667000000.000000000000000
+
+Dot Product (with critical section) - Threads: 64
+Time: 0.184531 seconds
+Speedup: 0.073033
+Dot product result with critical section: 166667166667019104.000000000000000

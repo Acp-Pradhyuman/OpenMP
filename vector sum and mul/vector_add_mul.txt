@@ -1,0 +1,73 @@
+gcc -fopenmp vector_add_mul.c
+./a.out
+Performing Vector Addition and Vector Multiplication
+
+Vector Addition - Threads: 1
+Time: 0.005526 seconds
+Speedup: 1.000000
+Sum of result: 1000001.000000000000000
+
+Vector Multiplication - Threads: 1
+Time: 0.009449 seconds
+Speedup: 1.000000
+Result at last index: 1000000.000000000000000
+
+Vector Addition - Threads: 2
+Time: 0.001114 seconds
+Speedup: 4.959372
+Sum of result: 1000001.000000000000000
+
+Vector Multiplication - Threads: 2
+Time: 0.001014 seconds
+Speedup: 9.322806
+Result at last index: 1000000.000000000000000
+
+Vector Addition - Threads: 4
+Time: 0.001120 seconds
+Speedup: 4.933208
+Sum of result: 1000001.000000000000000
+
+Vector Multiplication - Threads: 4
+Time: 0.000859 seconds
+Speedup: 10.996684
+Result at last index: 1000000.000000000000000
+
+Vector Addition - Threads: 8
+Time: 0.001561 seconds
+Speedup: 3.540293
+Sum of result: 1000001.000000000000000
+
+Vector Multiplication - Threads: 8
+Time: 0.000987 seconds
+Speedup: 9.570262
+Result at last index: 1000000.000000000000000
+
+Vector Addition - Threads: 16
+Time: 0.001713 seconds
+Speedup: 3.226974
+Sum of result: 1000001.000000000000000
+
+Vector Multiplication - Threads: 16
+Time: 0.001173 seconds
+Speedup: 8.052303
+Result at last index: 1000000.000000000000000
+
+Vector Addition - Threads: 32
+Time: 0.003603 seconds
+Speedup: 1.533921
+Sum of result: 1000001.000000000000000
+
+Vector Multiplication - Threads: 32
+Time: 0.001469 seconds
+Speedup: 6.432072
+Result at last index: 1000000.000000000000000
+
+Vector Addition - Threads: 64
+Time: 0.006031 seconds
+Speedup: 0.916273
+Sum of result: 1000001.000000000000000
+
+Vector Multiplication - Threads: 64
+Time: 0.001550 seconds
+Speedup: 6.097427
+Result at last index: 1000000.000000000000000
